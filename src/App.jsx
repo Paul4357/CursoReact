@@ -1,18 +1,21 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import { HookEstado } from "./components/03-hookEstado";
-import { AumentarSaldo } from "./components/04-aumentarSaldo";
+import "./App.css";
+import { RenderLista } from "./components/05-renderizarListas";
+import { Calculadora } from "./components/06-Calculadora";
+import { ConsumirApi } from "./components/09-consumoApis";
+import { RenderCondicional3 } from "./components/09-renderCondicional3";
+import { HookEffect } from "./components/10-hookEffect";
+import { Reqres } from "./components/ConsumoReqres";
 
 function App() {
   return (
     <>
       <div className="container">
         <div className="row">
-          <div className="col">
-            <HookEstado inicial={100} />
+          <div className="col-6">
+            <RenderCondicional3 />
           </div>
-          <div className="col">
-            <AumentarSaldo />
+          <div className="col-6">
+            <Reqres />
           </div>
         </div>
       </div>
