@@ -1,10 +1,6 @@
 import "./App.css";
-import { RenderLista } from "./components/05-renderizarListas";
-import { Calculadora } from "./components/06-Calculadora";
-import { ConsumirApi } from "./components/09-consumoApis";
-import { RenderCondicional3 } from "./components/09-renderCondicional3";
-import { HookEffect } from "./components/10-hookEffect";
-import { Reqres } from "./components/ConsumoReqres";
+import { EfectoCarga } from "./components/12-EfectoDeCarga";
+import { Formulario } from "./components/13-Formulario";
 
 function App() {
   return (
@@ -12,10 +8,10 @@ function App() {
       <div className="container">
         <div className="row">
           <div className="col-6">
-            <RenderCondicional3 />
+            <Formulario />
           </div>
           <div className="col-6">
-            <Reqres />
+            <EfectoCarga />
           </div>
         </div>
       </div>
